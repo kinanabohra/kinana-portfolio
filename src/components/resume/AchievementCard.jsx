@@ -1,0 +1,41 @@
+import React from "react";
+
+const AchievementCard = ({ title, details }) => {
+  return (
+    <div className="w-full flex flex-col sm:flex-row group gap-4 sm:gap-6">
+      <div className='w-8 sm:w-10 h-[6px] bgOpacity mt-6 sm:mt-10 relative'>
+        <span className='absolute w-4 sm:w-5 h-4 sm:h-5 rounded-full -top-1 sm:-top-2 -left-2 sm:-left-3 flex justify-center items-center bg-black bg-opacity-60'>
+          <span className='w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-bodyColor inline-flex group-hover:bg-designColor duration-300'></span>
+        </span>
+      </div>
+
+      <div className="-ml-6 w-full bg-gradient-to-r from-bodyColor via-[#131922] to-[#1a202c] group hover:bg-gradient-to-bl hover:from-[#131922] hover:via-[#1a202c] hover:to-bodyColor duration-300 rounded-xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-shadowOne">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-designColor mb-3 sm:mb-4 border-b border-gray-500 pb-2">
+          {title}
+        </h2>
+        <ul className="text-gray-300 space-y-3 sm:space-y-4">
+          {details.map((item, index) => (
+            <li
+              key={index}
+              className="flex flex-col sm:flex-row justify-between items-start sm:items-center hover:text-designColor transition duration-300"
+            >
+              <p className="text-sm sm:text-md md:text-lg">{item.Name}</p>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mt-2 sm:mt-0">
+                {item.position && (
+                  <p className="text-xs sm:text-sm md:text-md lg:text-lg bg-gray-800 rounded-full px-3 font-normal shadow-inner text-center w-full sm:w-auto">
+                    🏆 {item.position}
+                  </p>
+                )}
+                <p className="text-xs sm:text-sm md:text-md font-normal text-designColor bg-black bg-opacity-25 rounded-lg px-3 py-1 text-center w-full sm:w-auto">
+                  📅 {item.year}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default AchievementCard;
