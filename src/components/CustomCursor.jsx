@@ -3,15 +3,31 @@ import { motion } from "framer-motion";
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    const checkTouchDevice = () => {
+      setIsTouchDevice(window.matchMedia("(pointer: coarse)").matches);
+    };
+
+    checkTouchDevice();
+    window.addEventListener("resize", checkTouchDevice);
+
+    return () => window.removeEventListener("resize", checkTouchDevice);
+  }, []);
+
+  useEffect(() => {
+    if (isTouchDevice) return;
+
     const updatePosition = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener("mousemove", updatePosition);
     return () => window.removeEventListener("mousemove", updatePosition);
-  }, []);
+  }, [isTouchDevice]);
+
+  if (isTouchDevice) return null; // Hide cursor for touch devices
 
   return (
     <>
