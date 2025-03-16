@@ -39,7 +39,7 @@ const ProjectsCard = ({ title, des, img, tag, github, live }) => {
           {tag && <p className="inline px-2 py-1 rounded-md bg-gray-800 text-sm text-gray-400">{tag}</p>}
         </div>
 
-        <p className="text-lightText text-sm md:text-base text-justify">{des}</p>
+        <p className="text-lightText text-sm md:text-base">{des}</p>
 
         <div className="flex gap-2 mt-3">
           {github ? (
