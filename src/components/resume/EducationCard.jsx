@@ -16,9 +16,14 @@ const EducationCard = ({ title, subTitle, durationYear, address }) => {
             {durationYear}
           </p>
         </div>
-        <div className='pb-4 sm:pb-8'>
+        <div className='pb-4 sm:pb-8 flex flex-col gap-1'>
           <h4 className='text-sm sm:text-md md:text-lg text-gray-400 group-hover:text-gray-300 duration-300'>{subTitle}</h4>
-          <p className='text-xs sm:text-sm md:text-md text-gray-400 group-hover:text-gray-300 duration-300'>📍{address}</p>
+          <p className='text-xs sm:text-sm md:text-md text-gray-400 group-hover:text-gray-300 duration-300 flex items-center gap-1'> 
+            <svg className="w-4 h-4 fill-current text-gray-400 group-hover:text-gray-300 duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            {address}
+          </p>
         </div>
       </div>
     </div>

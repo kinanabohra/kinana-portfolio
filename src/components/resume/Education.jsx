@@ -47,7 +47,7 @@ const Education = () => {
             title="Hackathons & Exhibitions"
             details={[
               { Name: "IT Rajasthan Hackathon", year: "2023"},
-              { Name: "HACK - A - MANIA", year: "2023", position: "2st" },
+              { Name: "HACK - A - MANIA", year: "2023", position: "2nd" },
               { Name: "Ideathon", year: "2023",position: "1st"},
               { Name: "Design Code Showdown", year: "2024", position: "1st" },
               { Name: "AITCE IDEA LAB - TECH FEST", year: "2025"},
