@@ -11,7 +11,7 @@ const AchievementCard = ({ title, details }) => {
       </div>
 
       {/* Card Content */}
-      <div className="-ml-6 w-full bg-gradient-to-r from-bodyColor via-[#131922] to-[#1a202c] group hover:bg-gradient-to-bl hover:from-[#131922] hover:via-[#1a202c] hover:to-bodyColor duration-300 rounded-xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-shadowOne">
+      <div className="-ml-6 -2 w-full bg-gradient-to-r from-bodyColor via-[#131922] to-[#1a202c] group hover:bg-gradient-to-bl hover:from-[#131922] hover:via-[#1a202c] hover:to-bodyColor duration-300 rounded-xl p-4 sm:p-6 md:p-8 lg:p-10 shadow-shadowOne">
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-designColor mb-3 sm:mb-4 border-b border-gray-500 pb-2">
           {title}
         </h2>
@@ -19,16 +19,16 @@ const AchievementCard = ({ title, details }) => {
           {details.map((item, index) => (
             <li
               key={index}
-              className="flex flex-col sm:flex-row justify-between items-start sm:items-center hover:text-designColor transition duration-300"
+              className="flex flex-col sml:flex-row justify-between items-start sml:items-center hover:text-designColor transition duration-300"
             >
               <p className="text-sm sm:text-md md:text-lg">{item.Name}</p>
-              <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3 mt-2 sm:mt-0">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mt-2 sml:mt-0">
                 {item.position && (
-                  <p className="text-xs sm:text-sm md:text-md lg:text-lg bg-gray-800 rounded-full px-3 py-1 font-normal shadow-inner text-center min-w-max">
+                  <p className="text-xs sm:text-sm md:text-md lg:text-lg bg-gray-800 rounded-full px-3 py-1 font-normal shadow-inner text-center w-full sm:w-auto">
                     🏆 {item.position}
                   </p>
                 )}
-                <p className="text-xs sm:text-sm md:text-md font-normal text-designColor bg-black bg-opacity-25 rounded-lg px-3 py-1 text-center flex items-center gap-2 min-w-max">
+                <p className="text-xs sm:text-sm md:text-md font-normal text-designColor bg-black bg-opacity-25 rounded-lg px-3 py-1 text-center flex items-center gap-2 w-full sm:w-auto">
                   <svg className="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M7 10h5v5H7zM12 10h5v5h-5zM17 10h5v5h-5zM22 5h-1V3h-2v2H5V3H3v2H2C.9 5 0 5.9 0 7v14c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zM20 21H4V9h16v12z"/>
                   </svg>

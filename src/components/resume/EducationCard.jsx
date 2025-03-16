@@ -10,9 +10,9 @@ const EducationCard = ({ title, subTitle, durationYear, address }) => {
       </div>
 
       <div className='-ml-6 w-full bg-gradient-to-r from-bodyColor via-[#131922] to-[#1a202c] group hover:bg-gradient-to-bl hover:from-[#131922] hover:via-[#1a202c] hover:to-bodyColor duration-300 rounded-xl p-4 sm:px-4 md:px-6 lg:px-8 flex flex-col justify-center gap-2 shadow-shadowOne'>
-        <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center pt-4 sm:pt-8'>
+        <div className='flex flex-col xsml:flex-row  justify-between items-start xsml:items-center pt-4 sm:pt-8'>
           <h2 className='text-md sm:text-lg md:text-xl  font-semibold group-hover:text-white duration-300'>{title}</h2>
-          <p className='mt-2 sm:mt-0 px-2 py-1 text-xs sm:text-sm md:text-md font-normal text-designColor bg-black bg-opacity-20 rounded-lg text-center'>
+          <p className='mt-2 sml:mt-0 px-2 py-1 text-xs sm:text-sm md:text-md font-normal text-designColor bg-black bg-opacity-20 rounded-lg text-center'>
             {durationYear}
           </p>
         </div>
