@@ -11,15 +11,13 @@ const ResearchCard = ({ research }) => {
 
       {research.conference && (
         <p className="text-gray-300 flex items-center gap-2 text-sm sm:text-base">
-          <FaChalkboardTeacher className="text-lg text-green-300" />
-          <span className="font-medium text-gray-400">Conference:</span> {research.conference.name} ({research.conference.year})
+          <span><FaChalkboardTeacher className="inline text-green-300 mr-2" /><span className="font-medium text-gray-400 mr-2">Conference:</span> {research.conference.name} ({research.conference.year})</span>
         </p>
       )}
 
       {research.publication && (
-        <p className="text-gray-300 flex items-center gap-2 text-sm sm:text-base">
-          <FaRegNewspaper className="text-lg text-designColor" />
-          <span className="font-medium text-gray-400">Publication:</span> 
+        <p className="text-gray-300 flex items-center text-sm sm:text-base">
+          <span><FaRegNewspaper className="inline text-designColor mr-2 -mt-1" /><span className="font-medium text-gray-400 mr-2">Publication:</span> 
           {research.publication.link ? (
             <a 
               href={research.publication.link} 
@@ -32,6 +30,7 @@ const ResearchCard = ({ research }) => {
           ) : (
             `${research.publication.name} (${research.publication.year})`
           )}
+          </span>
         </p>
       )}
 
