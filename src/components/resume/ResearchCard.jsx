@@ -11,14 +11,14 @@ const ResearchCard = ({ research }) => {
 
       {research.conference && (
         <p className="text-gray-300 flex items-center gap-2 text-sm sm:text-base">
-          <FaChalkboardTeacher className="text-green-300" />
+          <FaChalkboardTeacher className="text-lg text-green-300" />
           <span className="font-medium text-gray-400">Conference:</span> {research.conference.name} ({research.conference.year})
         </p>
       )}
 
       {research.publication && (
         <p className="text-gray-300 flex items-center gap-2 text-sm sm:text-base">
-          <FaRegNewspaper className="text-designColor" />
+          <FaRegNewspaper className="text-lg text-designColor" />
           <span className="font-medium text-gray-400">Publication:</span> 
           {research.publication.link ? (
             <a 
