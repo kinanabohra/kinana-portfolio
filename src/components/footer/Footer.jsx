@@ -5,7 +5,7 @@ import { FaXTwitter,FaGithub,FaLinkedin} from 'react-icons/fa6';
 const Footer = () => {
   return (
     <footer className="w-full  text-white py-6  border-t-[1px] border-t-gray-600">
-      <div className="container mx-auto flex items-center justify-center gap-4 sml:gap-8">
+      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sml:gap-8">
       <p className="text-lg font-medium">Developed by <span className="italic font-semibold text-designColor">Kinana Bohra</span></p>
 
         <div className="flex space-x-2 sml:space-x-4">
