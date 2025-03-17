@@ -2,9 +2,9 @@ import React from "react";
 
 const AchievementCard = ({ title, details }) => {
   return (
-    <div className="w-full flex flex-col sm:flex-row group gap-4 sm:gap-6">
+    <div className="w-full flex flex-col xxs:flex-row group gap-4 xxs:gap-6">
       {/* Timeline Indicator */}
-      <div className="w-8 sm:w-10 h-[6px] bgOpacity mt-6 sm:mt-10 relative">
+      <div className="w-5 xs:w-7 sm:w-10 h-[6px] bgOpacity mt-6 sm:mt-10 relative">
         <span className="absolute w-4 sm:w-5 h-4 sm:h-5 rounded-full -top-1 sm:-top-2 -left-2 sm:-left-3 flex justify-center items-center bg-black bg-opacity-60">
           <span className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-bodyColor inline-flex group-hover:bg-designColor duration-300"></span>
         </span>
@@ -22,7 +22,7 @@ const AchievementCard = ({ title, details }) => {
               className="flex flex-col sml:flex-row justify-between items-start sml:items-center hover:text-designColor transition duration-300"
             >
               <p className="text-sm sm:text-md md:text-lg">{item.Name}</p>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 mt-2 sml:mt-0">
+              <div className="flex flex-col xxs:flex-row gap-2 sm:gap-3 mt-2 sml:mt-0">
                 {item.position && (
                   <p className="text-xs sm:text-sm md:text-md lg:text-lg bg-gray-800 rounded-full px-3 py-1 font-normal shadow-inner text-center w-full sm:w-auto">
                     🏆 {item.position}

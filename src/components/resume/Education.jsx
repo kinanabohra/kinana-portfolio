@@ -8,7 +8,7 @@ const Education = () => {
     <motion.div 
       initial={{ opacity: 0, y: -15 }} 
       animate={{ opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } }}
-      className='w-full flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-20 px-4 sm:px-8 md:px-12 lg:px-16'
+      className='w-full flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-20 px-2 sm:px-4 md:px-6 lg:px-8'
     >
       <div className='w-full lg:w-1/2'>
         <div className='py-8 sm:py-12 font-titleFont flex flex-col'>

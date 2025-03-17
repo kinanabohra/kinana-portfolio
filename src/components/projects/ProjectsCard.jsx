@@ -24,13 +24,26 @@ const ProjectsCard = ({ title, des, img, tag, github, live }) => {
       hover:via-[#1a202c] hover:to-bodyColor transition-all duration-500 mx-auto"
     >
       <div className="w-full h-40 overflow-hidden rounded-lg">
-        <motion.img
-          className="w-auto h-auto max-w-full object-contain rounded-xl group-hover:scale-110 duration-300 cursor-pointer"
-          src={img}
-          alt="Project Image"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
-        />
+        {live ? (
+          <a href={live} target="_blank" rel="noopener noreferrer">
+            <motion.img
+              className="w-auto h-auto max-w-full object-contain rounded-xl group-hover:scale-110 duration-300 cursor-pointer"
+              src={img}
+              alt="Project Image"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
+          </a>
+        ) : (
+          <motion.img
+            className="w-auto h-auto max-w-full object-contain rounded-xl group-hover:scale-110 duration-300 cursor-pointer"
+            src={img}
+            alt="Project Image"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => showPopup("Live demo is not available")}
+          />
+        )}
       </div>
 
       <div className="w-full mt-5 flex flex-col gap-3">

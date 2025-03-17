@@ -2,8 +2,8 @@ import React from 'react';
 
 const EducationCard = ({ title, subTitle, durationYear, address }) => {
   return (
-    <div className='w-full flex flex-col sm:flex-row gap-4 sm:gap-6 group'>
-      <div className='w-8 sm:w-10 h-[6px] bgOpacity mt-6 sm:mt-10 relative'>
+    <div className='w-full flex flex-col xxs:flex-row gap-4 xxs:gap-6 group'>
+      <div className='w-5 xs:w-7 sm:w-10 h-[6px] bgOpacity mt-6 sm:mt-10 relative'>
         <span className='absolute w-4 sm:w-5 h-4 sm:h-5 rounded-full -top-1 sm:-top-2 -left-2 sm:-left-3 flex justify-center items-center bg-black bg-opacity-60'>
           <span className='w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-bodyColor inline-flex group-hover:bg-designColor duration-300'></span>
         </span>
