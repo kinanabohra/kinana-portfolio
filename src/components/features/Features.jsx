@@ -2,7 +2,7 @@ import React from 'react'
 import Title from '../layouts/Title'
 import Card from './Card'
 import { CgWebsite } from "react-icons/cg";
-import { FaBrain, FaShoppingCart } from "react-icons/fa";
+import { FaBrain, FaServer } from "react-icons/fa";
 
 const Features = () => {
   return (
@@ -17,14 +17,15 @@ const Features = () => {
          icon={<CgWebsite />}
         />
         <Card
+          title="Back-end Development"
+          des="Building robust server-side applications, APIs, and database management for seamless functionality and scalability."
+          icon={<FaServer />}
+        />
+
+        <Card
          title="AI & ML Solutions"
          des="Developing AI-driven applications, predictive analytics, and data visualization using Python, R, and Power BI."
          icon={<FaBrain />}
-        />
-        <Card
-         title="E-commerce & Marketplace Development"
-         des="Creating online stores, multi-vendor marketplaces, and community-driven shopping platforms with secure payments."
-         icon={<FaShoppingCart />}
         />
       </div>
     </section>

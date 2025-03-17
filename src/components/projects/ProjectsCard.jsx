@@ -10,7 +10,7 @@ const ProjectsCard = ({ title, des, img, tag, github, live }) => {
   const showPopup = (message) => {
     setPopupText(message);
     setPopupVisible(true);
-    setTimeout(() => setPopupVisible(false), 3000); // Hide after 3s
+    setTimeout(() => setPopupVisible(false), 3000);
   };
 
   return (
