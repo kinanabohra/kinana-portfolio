@@ -9,9 +9,6 @@ import project5 from "./project5.png";
 import project6 from "./project6.png";
 import project7 from "./project7.png";
 
-
-
-
 export {
     logo,
     bannerImg,

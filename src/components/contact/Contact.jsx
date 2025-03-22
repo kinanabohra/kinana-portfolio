@@ -31,7 +31,7 @@ const Contact = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    if (error) setError(""); // Remove error when user starts typing
+    if (error) setError("");
   };
 
   const sendEmail = (e) => {
@@ -76,14 +76,12 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-wrap justify-center items-start px-4 md:px-8 lg:px-16">
-        {/* Contact Details */}
         <div className="mt-2 w-full md:w-1/2 lg:w-1/3 space-y-12 pr-0 md:pr-6">
           {contactDetails.map((item, index) => (
             <ContactInfo key={index} {...item} />
           ))}
         </div>
 
-        {/* Contact Form */}
         <div className="w-full md:w-1/2 lg:w-2/3 mt-10 md:mt-0">
           <h3 className="text-2xl md:text-3xl font-semibold mb-6">Get in Touch</h3>
           {error && <p className="text-red-500 mb-4">{error}</p>}
@@ -120,7 +118,6 @@ const Contact = () => {
             </button>
           </form>
 
-          {/* Popup Message */}
           {popupVisible && (
             <div className="fixed bottom-4 right-4 bg-gray-700 text-white px-4 sm:px-6 py-3 rounded-lg shadow-lg text-sm sm:text-base flex items-center space-x-2 animate-slide-up">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -135,7 +132,6 @@ const Contact = () => {
   );
 };
 
-// Component for Contact Info Section
 const ContactInfo = ({ icon, title, text }) => (
   <div className="flex items-center">
     <div className="w-12 h-12 bg-designColor rounded-full flex items-center justify-center text-white text-xl">{icon}</div>
@@ -147,7 +143,6 @@ const ContactInfo = ({ icon, title, text }) => (
   </div>
 );
 
-// Component for Input Fields
 const InputField = ({ label, id, name, type, value, onChange }) => (
   <div className="w-full">
     <label htmlFor={id} className="block text-sm md:text-lg mb-2">{label}</label>
@@ -158,7 +153,6 @@ const InputField = ({ label, id, name, type, value, onChange }) => (
   </div>
 );
 
-// Component for Textarea Field
 const TextAreaField = ({ label, id, name, value, onChange }) => (
   <div>
     <label htmlFor={id} className="block text-sm md:text-lg mb-2">{label}</label>
