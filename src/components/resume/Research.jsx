@@ -6,7 +6,7 @@ const researchDetails = [
   {
     title: "From Pages to Reality: Revolutionizing Practical Learning in Libraries with AR-VR",
     conference: {
-      name: "ICKSHI 2024",
+      name: "ICKSHI",
       year: "2024",
     },
     abstract: "Explores the integration of AR and VR in libraries to enhance hands-on learning experiences.",
@@ -15,7 +15,7 @@ const researchDetails = [
   {
     title: "The Integration of AI Tools in Student Life: Impacts on Academics and Professional Development",
     conference: {
-      name: "ICSIS 2024",
+      name: "ICSIS",
       year: "2024",
     },
     abstract: "Analyzes how AI tools influence students' academic performance and career readiness.",
@@ -24,7 +24,7 @@ const researchDetails = [
   {
     title: "From Text to Revolution: Unfolding Chat GPT's Impact on Library Services",
     conference: {
-      name: "ASLIP Conclave 2023",
+      name: "ASLIP Conclave",
       year: "2023",
     },
     publication: {
@@ -38,7 +38,7 @@ const researchDetails = [
   {
     title: "Data Evolution: Harnessing the Power of Big Data Analytics to Drive Innovation",
     conference: {
-      name: "ICUS 2023",
+      name: "ICUS",
       year: "2023",
     },
     publication: {
