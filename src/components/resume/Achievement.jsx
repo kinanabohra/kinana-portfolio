@@ -60,7 +60,6 @@ const Achievement = () => {
               { Name: "Data Base Management System", year: "2024" },
               { Name: "Problem Solving In C", year: "2024" },
               { Name: "Data Mining", year: "2025" }
-
             ]}
             
           />
